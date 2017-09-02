@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <script>
+    var count=0;
+    var retainvalue;
+    function myFunction() {
+
+        if(count==0){
+          //retainvalue=document.getElementById("ph").
+        document.getElementById("ph").innerHTML = "Change 1";
+        count++;
+      }
+        else if (count==1) {
+        document.getElementById("pw").innerHTML = "Change 2";
+        count++;
+        }
+        else if (count==2) {
+        document.getElementById("cssp").innerHTML = "Change 3";
+        }
+
+    }
+    function givealert()
+    {
+      var y=confirm("Welcome")
+      if(y)
+      {
+        alert("Enjoy the site")
+      }
+}
+function displaycanvas()
+{
+  var myCanvas = document.createElement('canvas');
+  myCanvas.setAttribute("id", "my-canvas");
+  var ctx = myCanvas.getContext("2d");
+  ctx.fillStyle = "#FF0000";
+  ctx.fillRect(20, 30, 80, 80);
+  var myarticle = document.getElementById("articlereplace");
+
+  document.getElementById("replacetry").replaceChild(myCanvas, myarticle);
+
+
+
+}
+    </script>
+    <style>
+      body{
+        background-color: rgba(240, 220, 180, 0.5);
+      }
+      .helloclass{
+        position: fixed;
+        left:20px;
+        top:20px;
+      }
+      .Worldclass{
+          top:40px;
+          left:50px;
+          position:fixed;
+      }
+      .CSSclass{
+        top:60px;
+        left:70px;
+        position: fixed;
+      }
+    </style>
+
+
+  </head>
+
+    <body onload="givealert()">
+      <section id="replacetry" style="height: 200px; width: 200px; border: 2px solid; background-color: blue; box-shadow: 10px 10px 5px #888888;">
+        <article id="articlereplace">
+            <p id="ph" class="helloclass"> Hello </p>
+            <p id="pw" class="Worldclass"> World </p>
+            <p id="cssp" class="CSSclass">CSS Position</p>
+        </article>
+      </section>
+      <button onclick="myFunction()">Click Me</button>
+      <button onclick="displaycanvas()">Display Canvas</button>
+
+
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+  var count=0;
+  function myFunction() {
+
+      if(count==0){
+      document.getElementById("demo").innerHTML = "Hello World";
+      count++;
+    }
+      else if (count==1) {
+      document.getElementById("demo").innerHTML = "Second";
+      }
+
+
+  }
+  </script>
+</head>
+<body>
+
+<p>JavaScript.</p>
+
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo">Here</p>
+
+
+
+</body>
+</html>
