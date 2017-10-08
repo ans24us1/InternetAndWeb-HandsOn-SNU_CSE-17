@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+
+
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script>
+     function example()
+     {
+        
+        var courses=[1,2,3];
+           node=document.getElementByID("funjava");
+           node.innerHTML = courses.map(Math.sqrt); );
+
+     }
+
+</script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">WebSiteName</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Page 1</a></li>
+          <li><a href="#">Page 2</a></li>
+          <li><a href="#">Page 3</a></li>
+        </ul>
+      </div>
+
+    </nav>
+
+<div class="container">
+  <h1>Grid Example</h1>
+<div class="jumbotron" style="background-color:grey">
+<div class="row">
+  <div class="hidden-md-inline" style="text-color:white">HTML</div>
+  <div class="col-md-4">CSS</div>
+  <div class="col-md-4">Javascript</div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">Example1 - Row 1<!--Column left--></div>
+        <div class="col-md-4">
+            <!--Column right with nested rows and columns-->
+            <div class="row">
+                <div class="col-md-4">Example 1 - Row 2</div>
+                <div class="col-md-4">Example 1 - Row 2 Column 2 </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">Example 1 - Row 3</div>
+            </div>
+        </div>
+    </div>
+</div>
+<dl>
+  <dt>Bootstrap</dt>
+  <dd>- Container</dd> <button onclick="example()">Calculate Square</button>
+  <dd>- Container-Fluid</dd> <p id="funjava"></p>
+  <dd>- Jumbotron</dd>
+</dl></div>
+
+</div>
+<div class="well">
+<img src="baby4.jpg" class="img-rounded"  width="304" height="236">
+<img src="baby4.jpg" class="img-circle"  width="304" height="236">
+<img src="baby4.jpg" class="img-thumbnail"  width="304" height="236">
+<img src="baby4.jpg" class="img-fluid"  width="304" height="236">
+</div>
+
+  </body>
+</html>

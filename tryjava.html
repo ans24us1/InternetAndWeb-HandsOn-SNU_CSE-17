@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script>
+  var numbers = [1, 5, 10, 15];
+
+  function myFunction() {
+      x = document.getElementById("myjava2")
+      x.innerHTML = numbers.map(Math.sqrt);
+  }
+
+  function funcjava()
+  {
+ numbers.map(function(x) {
+  node = document.getElementById("myjava");
+  node.innerHTML += " " + x * 2;
+});
+
+node1 = document.getElementById("myjava1");
+node1.innerHTML += " " + numbers.map(Number);
+var reduce1 = numbers.reduce(function(accumulator, myval){
+  return accumulator+myval;
+});
+node2 = document.getElementById("myreduce");
+node2.innerHTML =  reduce1;
+var a=document.getElementById("one");
+
+  }
+  </script>
+</head>
+<body>
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+      <li><a href="#">Page 3</a></li>
+    </ul>
+  </div>
+
+</nav>
+
+<div class="container">
+<h1>Grid Example</h1>
+<div class="jumbotron" style="background-color:grey">
+<div class="row">
+<div id="one" class="hidden-md-inline" style="text-color:white"><p><img src="baby3.jpg"></p>HTML</div>
+<div id="one" class="col-md-4"><p><img src="baby2.jpg"></p></div>
+<div class="col-md-4">Javascript</div>
+</div>
+<div class="container">
+<div class="row">
+    <div class="col-md-4">Example1 - Row 1<!--Column left--></div>
+    <div class="col-md-4">
+        <!--Column right with nested rows and columns-->
+        <div class="row">
+            <div class="col-md-4">Example 1 - Row 2</div>
+            <div class="col-md-4">Example 1 - Row 2 Column 2 </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">Example 1 - Row 3</div>
+        </div>
+    </div>
+</div>
+</div>
+<dl>
+<dt>Bootstrap</dt>
+<dd>- Container</dd> <button class="btn btn-default" onclick="funcjava()">Try it</button>
+
+<dd>- Container-Fluid</dd> <p id="myjava"></p>
+<dd>- Jumbotron</dd> <p id="myjava1"></p>
+<dd>- Button Class</dd> <p id="myjava2"></p>
+<dd>- Functional Javascript</dd> <p id="myreduce"></p>
+</dl></div>
+
+</div>
+<div class="well">
+<img src="baby4.jpg" class="img-rounded"  width="304" height="236">
+<img src="baby4.jpg" class="img-circle"  width="304" height="236">
+<img src="baby4.jpg" class="img-thumbnail"  width="304" height="236">
+<img src="baby4.jpg" class="img-fluid"  width="304" height="236">
+</div>
+
+
+<p id="demo"></p>
+
+
+
+</body>
+</html>

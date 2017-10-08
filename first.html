@@ -5,15 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Semantic HTML</title>
     <style>
+    aside{
+        border: 3px solid;
+        width: 400px;
+        height: 300px;
+        top: 300px;
+        position: sticky;
+    }
+    td{
+      padding: 20px 50px 8px 50px;
+    }
+     #myHead{
+      text-decoration-color: #CCC;
+     }
       nav.topnav{
         background-color: #f1f1f1;
         position:sticky;
         top:3px;
         left: 0px;
-        overflow: hidden;
+        overflow: auto;
       }
       #wrapper {
-    width: 500px;
+    width: 650px;
     margin: 0 auto;
     border: 2px solid black;
 
@@ -23,12 +36,11 @@
 
       }
       nav.topnav li a {
-    display: block;
-    float: left;
+    display: inline-block;
+    padding: 2px 2px 2px 2px;
+    float:left;
     color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
-
+    margin: 10px 16px;
     border-right: 2px solid;
     border-right-color: "#878";
 }
@@ -41,14 +53,18 @@ nav.topnav li a.active {
     color: white;
 }
 
-nav.topnav li a:hover:not(.active) {
+nav.topnav li a:hover {
     background-color: #555;
     color: white;
 }
     </style>
   </head>
-  <body id="wrapper">
-
+  <body >
+    <aside>
+      <a href="#"><h2 style="text-decoration-color: white">Ad1</h2></a>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+      </aside>
+<div id="wrapper">
 <nav class="topnav">
     <h1>Navigation Links</h1>
     <ul>
@@ -56,9 +72,11 @@ nav.topnav li a:hover:not(.active) {
       <li><a href='#'>About</a></li>
       <li><a href='#'>Blog</a></li>
       <li><a href='#'>Sign Up</a></li>
+      <li><a href='#'>Link 1</a></li>
+      <li><a href='#'>Link 2</a></li>
+      <li><a href='#'>Link 3</a></li>
     </ul>
 </nav>
-
 <section>
 <header><h1>This is Header tag</h1></header>
     <article>
@@ -69,56 +87,32 @@ nav.topnav li a:hover:not(.active) {
   <p>Lets try some articles tag....</p>
 </article>
 </section>
-<section><header><h2>This is 2nd article</h2></header>
+<section class="myHead"><header><h2>This is 2nd article</h2></header>
+<table>
+  <tr>
+    <td>
 <article>
   <h1>First Post</h1>
   <p>Some content</p>
 </article>
-</section>
+</section></td><td>
 <article>
   <h1>Second Post</h1>
   <p>Some more content</p>
-  <h2>Subsection</h2>
-  <p>Some details</p>
-</article>
-<article>
+</article></td>
+<td><article>
   <header>
   <h1>Last Post</h1>
   <p>Final bit of content</p>
 </header>
-<footer>This is a footer </footer>
-</article>
-
-<figure>
-  <img src="" alt="This is a sample image">
+</article></td></table>
+<figure align="center">
+  <img style="width: 200px; height:200px" src="baby2.jpg" alt="This is a sample image">
   <figcaption>Sample image</figcaption>
 </figure>
-<section>     <!-- Add this -->
-  <h2>The Document Outline</h2>
-  <p>HTML5 includes several “sectioning content” elements that
-     affect the document outline.</p>
+<footer>This is a footer </footer>
+<footer><address><a href="anuradha.ravi@snu.edu.in"><h3>My Email ID<h3></a></address></footer>
+</div>
 
-  <h3>Headers</h3>
-  <p>The <code>&lt;header&gt;</code> element is one such sectioning
-     element.</p>
-
-  <h3>Footers</h3>
-  <p>And so is the <code>&lt;footer&gt;</code> element.</p>
-</section>    <!-- And this -->
-
-<section>     <!-- This too! -->
-  <h2>Inline Semantic HTML</h2>
-  <p>The <code>&lt;time&gt;</code> element is semantic, but it’s not
-     sectioning content.</p>
-</section>    <!-- Don't forget this -->
-<aside>
-<a href="#">Ad1</a>
-</aside>
-<section>
-   <h1>SNU</h1>
-   <h2>School of Engineering</h2>
-   <h3>
-</section>
-<footer><address><a href="anuradha.ravi@snu.edu.in">My Email ID</a></address></footer>
-  </body>
+</body>
 </html>
