@@ -1,10 +1,21 @@
 var myImages=["baby2.jpg","baby3.jpg","baby4.jpg"];
+var myObj=['{"Monday":"asdh","Tuesday":"kdjfkdf","Wednesday":"skdhfjhsdf"}',
+'{"Monday":"asdh1","Tuesday":"kdjfkdf","Wednesday":"skdhfjhsdf"}',
+'{"Monday":"asdh2","Tuesday":"kdjfkdf","Wednesday":"skdhfjhsdf"}'];
 function myFunc()
 {
   var mynamearr = Array.prototype.slice.call(document.getElementsByTagName("td"));
   mynamearr.map(function(myNode,index){
     myNode.innerHTML="<img src="+myImages[index]+">";
 });
+}
+function myJson()
+{
+  //var myObjJ=Array.prototype.slice.call(myObj);
+  myObj.map(function(myNode,index){
+    myJsonObj=JSON.parse(myNode);
+    document.write(myJsonObj.Monday+" "+myJsonObj.Tuesday+" "+myJsonObj.Wednesday);
+  });
 }
   function arrmaptry()
   {
